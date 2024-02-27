@@ -1,0 +1,14 @@
+
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  user: postgres
+  password: 191914
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: testerails_development
+
+  
