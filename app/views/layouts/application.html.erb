@@ -6,11 +6,29 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    
-   
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-tracks': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="https://teago-sites.s3.us-east-2.amazonaws.com/cuba_bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://teago-sites.s3.us-east-2.amazonaws.com/cuba_style.css">
+    <link rel="stylesheet" type="text/css" href="https://teago-sites.s3.us-east-2.amazonaws.com/cuba_responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/topnavbar' %>
+  
+    <main class="container">
+      <%= yield %>
+    </main>
+
+    <%= render 'layouts/footer' %>
+
   </body>
 </html>
