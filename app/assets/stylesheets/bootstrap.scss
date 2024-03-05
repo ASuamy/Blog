@@ -1,4 +1,9 @@
 /* stylelint-disable selector-list-comma-newline-after */
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
 
 .blog-header {
     border-bottom: 1px solid #e5e5e5;
@@ -61,7 +66,6 @@
     padding: 2.5rem 0;
     color: #727272;
     text-align: center;
-    background-color: #3f3f3f ;
     border-top: .05rem solid #e5e5e5;
   }
   .blog-footer p:last-child {
